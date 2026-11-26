@@ -1,10 +1,20 @@
-# Changelog — DreamSuit Site
+# Changelog — DreamSleeve Site
 
-All notable changes to the DreamSuit investor/customer site.
+All notable changes to the DreamSleeve investor/customer site.
 Format loosely follows [Keep a Changelog](https://keepachangelog.com/).
 Dates are absolute (YYYY-MM-DD).
 
 ## [Unreleased]
+
+### 2026-11-25 — Step 10: Rename to DreamSleeve + hero cleanup
+- **Renamed the brand to DreamSleeve** everywhere (matches the schematic's label): title,
+  meta/keywords/author, Open Graph + Twitter, JSON-LD Org/Product, header/footer wordmark,
+  hero lede, mailto CTAs, and docs. Placeholder domain `dreamsuit.com → dreamsleeve.com`
+  (canonical, OG/Twitter image URLs, JSON-LD @id, `CNAME.disabled`, sitemap/robots, README).
+  (The historical changelog line referencing the literal folder path is left as-is.)
+- **Hero cleanup:** removed the eyebrow kicker ("Dual-haptic pediatric pain platform") and
+  the "Live signal · dual-channel acquisition" readout — the hero now opens directly on the
+  "Synchronized dual-haptic embodiment." headline. JSON-LD still valid.
 
 ### 2026-11-25 — Step 9: Engineering schematic in the Device section
 - **Incorporated** the client's DreamSleeve anterior/posterior engineering schematic as
@@ -46,7 +56,7 @@ Dates are absolute (YYYY-MM-DD).
 ### 2026-11-25 — Step 1: Project scaffold & plan
 - Established project in `DREAMSUIT - BRAND DESIGN AND UI/`.
 - Confirmed direction with client: **investor-led**, CTA **"Request the investor deck"**,
-  **custom domain** (`dreamsuit.com` placeholder), **marked placeholders** for real data.
+  **custom domain** (`dreamsleeve.com` placeholder), **marked placeholders** for real data.
 - Wrote `PLAN.md`: design-token system (neuro-tech HUD — void navy / cyan signal /
   magenta charge / pass green), type roles (Space Grotesk · Inter · IBM Plex Mono as
   diegetic telemetry), layout concept, section architecture, SEO kit, quality floor.
@@ -79,7 +89,7 @@ Dates are absolute (YYYY-MM-DD).
 - Rendered from HTML/SVG via headless Chrome; `site.webmanifest` added.
 
 ### 2026-11-25 — Step 6: SEO infra + deploy files
-- `sitemap.xml`, `robots.txt`, `CNAME` (dreamsuit.com), `.nojekyll`, and `README.md`
+- `sitemap.xml`, `robots.txt`, `CNAME` (dreamsleeve.com), `.nojekyll`, and `README.md`
   with GitHub Pages deploy steps + the placeholder-swap checklist.
 
 ### 2026-11-25 — Step 7: Review & polish
@@ -90,6 +100,6 @@ Dates are absolute (YYYY-MM-DD).
   stage/panel sync across all four phases. No horizontal overflow at 390px.
 
 #### Open items for the client
-- Confirm final domain; swap `dreamsuit.com` + CTA email / deck link.
+- Confirm final domain; swap `dreamsleeve.com` + CTA email / deck link.
 - Replace all `[placeholder]` figures and traction milestones with verified data.
 - Optional: wire a form service if on-site email capture is desired.

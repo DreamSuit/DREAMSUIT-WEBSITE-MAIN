@@ -1,6 +1,6 @@
-# DreamSuit — Investor/Customer Site
+# DreamSleeve — Investor/Customer Site
 
-A single-page, dependency-free static site for **DreamSuit**, the synchronized
+A single-page, dependency-free static site for **DreamSleeve**, the synchronized
 dual-haptic wearable for pediatric procedural pain — a gamified vaccine experience
 (kids defeat the pathogen the shot protects against), shipping under FDA General
 Wellness with a path to Class II clearance and Medicaid EPSDT reimbursement.
@@ -20,14 +20,14 @@ PLAN.md CHANGELOG.md
 ## Deploy to GitHub Pages
 1. Create a repo and push these files to the default branch (root, not `/docs`).
    ```bash
-   git init && git add . && git commit -m "DreamSuit site"
+   git init && git add . && git commit -m "DreamSleeve site"
    git branch -M main
    git remote add origin git@github.com:<you>/<repo>.git
    git push -u origin main
    ```
 2. Repo **Settings → Pages → Build and deployment → Source: Deploy from a branch**,
    branch `main` / root. `.nojekyll` is included so Pages serves files as-is.
-3. **Custom domain:** `CNAME` is set to `dreamsuit.com`. In Settings → Pages, enter the
+3. **Custom domain:** `CNAME` is set to `dreamsleeve.com`. In Settings → Pages, enter the
    same domain and add these DNS records at your registrar:
    - `A` records for the apex → GitHub Pages IPs (185.199.108–111.153)
    - or a `CNAME` for `www` → `<you>.github.io`
@@ -35,9 +35,9 @@ PLAN.md CHANGELOG.md
 
 ## Before you publish — swap the placeholders
 Search the repo for these and replace with real values:
-- **Domain** `dreamsuit.com` → your domain, in: `index.html` (canonical, OG, Twitter,
+- **Domain** `dreamsleeve.com` → your domain, in: `index.html` (canonical, OG, Twitter,
   JSON-LD), `CNAME`, `robots.txt`, `sitemap.xml`, `site.webmanifest`.
-- **Email** `invest@dreamsuit.com` / `hello@dreamsuit.com` in `index.html` (the two CTAs
+- **Email** `invest@dreamsleeve.com` / `hello@dreamsleeve.com` in `index.html` (the two CTAs
   and the contact line). Or point the primary CTA at a deck link / data-room URL.
 - **`[placeholder]` figures** — market size, needle-fear %, traction milestones, team.
   They are visibly tagged in the UI and in `index.html`.

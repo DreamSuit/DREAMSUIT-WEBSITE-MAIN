@@ -1,4 +1,4 @@
-# DreamSuit — Investor/Customer Site · PLAN
+# DreamSleeve — Investor/Customer Site · PLAN
 
 > Living plan. Decisions, design system, architecture, and the step list.
 > Pair with `CHANGELOG.md` for the step-by-step history.
@@ -7,7 +7,7 @@
 
 ## 1. Brief & decisions
 
-**Product.** DreamSuit — a dual-haptic wearable (TENS current + Piezo voltage) that
+**Product.** DreamSleeve — a dual-haptic wearable (TENS current + Piezo voltage) that
 gates **pediatric** procedural pain and renders texture illusions in synchrony, turning a
 needle stick into a gamified "mission." The control app's **Game Selector** auto-scales the
 visual narrative and haptic texture to the child's developmental age; each game has the
@@ -26,7 +26,7 @@ synchronized dual-haptic embodiment.**
 |---|---|
 | Primary audience | **Investors first** (clinical proof supports, below the fold) |
 | Primary CTA | **Request the investor deck** |
-| Hosting | **Custom domain** — placeholder `https://dreamsuit.com`, swap in `index.html` + `CNAME` |
+| Hosting | **Custom domain** — placeholder `https://dreamsleeve.com`, swap in `index.html` + `CNAME` |
 | Content | **Clearly-marked placeholders** for all real stats/team/quotes — nothing fabricated as fact |
 | Stack | Static HTML/CSS/vanilla JS, **no build step**, GitHub Pages ready |
 
@@ -92,7 +92,7 @@ reading column (~1080px); device/telemetry sections break wider into instrument 
 ```
 
 ### Principles
-1. **Diegetic instrumentation** — the page behaves like DreamSuit's own console: data looks
+1. **Diegetic instrumentation** — the page behaves like DreamSleeve's own console: data looks
    real, locks engage, bars charge. The UI *is* the argument.
 2. **One cinematic moment** — the sticky Mission sequence. Everything else stays disciplined;
    no fade-up on every card.
