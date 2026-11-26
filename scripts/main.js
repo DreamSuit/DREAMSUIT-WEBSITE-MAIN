@@ -1,5 +1,5 @@
 /* ============================================================
-   DreamSuit — scroll experience
+   DreamSleeve — scroll experience
    Vanilla JS. No dependencies. Reduced-motion aware.
    ============================================================ */
 (function () {

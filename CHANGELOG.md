@@ -1,32 +1,69 @@
-# Changelog — DreamSuit Site
+# Changelog — DreamSleeve Site
 
-All notable changes to the DreamSuit investor/customer site.
+All notable changes to the DreamSleeve investor/customer site.
 Format loosely follows [Keep a Changelog](https://keepachangelog.com/).
 Dates are absolute (YYYY-MM-DD).
 
 ## [Unreleased]
 
-### 2026-11-25 — Step 8: Hero TENS vital-monitor layer
-- Added a medical/TENS-device treatment to the hero:
-  - **Dual-channel oscilloscope canvas** — live biphasic TENS pulse train (cyan) +
-    textured piezo waveform (magenta) with a sweeping beam node and graticule, drawn on
-    `<canvas>` with a top-fade mask so the headline stays crisp.
-  - **"LIVE SIGNAL · dual-channel acquisition"** status chip with a blinking dot.
-  - **Electrode contact emitters** — radiating signal rings (cyan + magenta) at the edges.
-  - Live dot on the **ALIGNMENT LOCK** telemetry value.
-- Performance/a11y: animation pauses off-screen (IntersectionObserver) and when the tab is
-  hidden; `prefers-reduced-motion` draws a single static frame; CPU-light (2 shadowed
-  strokes/frame). Electrodes/long chip text hidden on small screens.
-- **Fix:** tuned waveform opacity (0.42) and lane positions so the lede stays readable.
-- **Mobile hardening:** `min-width:0` + `width:100%` on `.hero__inner` and a fitted mobile
-  title clamp. Verified via CDP `setDeviceMetricsOverride` — `scrollWidth == clientWidth`
-  (zero horizontal overflow) at 390px and 360px. (Earlier apparent clipping was a
-  screenshot-capture artifact, not a real overflow.)
+### 2026-11-25 — Step 11: Merged `main` — kept the TENS vital-monitor hero (minus the two lines)
+- Merged `main`, which had independently added an oscilloscope/vital-monitor hero
+  (dual-channel TENS + piezo `<canvas>`, electrode emitters, LIVE chip + its CSS/JS).
+  **Kept that hero visual**, but removed the "Live signal · dual-channel acquisition" chip
+  and the "Dual-haptic pediatric pain platform" kicker (per client request) and applied the
+  DreamSleeve rename to it. Pulled in main's `.gitignore` (ignore `.claude/`) and the
+  hero-oscilloscope `scripts/main.js`. The live-dot now sits on the ALIGNMENT LOCK telemetry.
 
+### 2026-11-25 — Step 10: Rename to DreamSleeve + hero cleanup
+- **Renamed the brand to DreamSleeve** everywhere (matches the schematic's label): title,
+  meta/keywords/author, Open Graph + Twitter, JSON-LD Org/Product, header/footer wordmark,
+  hero lede, mailto CTAs, and docs. Placeholder domain `dreamsuit.com → dreamsleeve.com`
+  (canonical, OG/Twitter image URLs, JSON-LD @id, `CNAME.disabled`, sitemap/robots, README).
+  (The historical changelog line referencing the literal folder path is left as-is.)
+- **Hero cleanup:** removed the eyebrow kicker ("Dual-haptic pediatric pain platform") and
+  the "Live signal · dual-channel acquisition" readout — the hero now opens directly on the
+  "Synchronized dual-haptic embodiment." headline. JSON-LD still valid.
+
+### 2026-11-25 — Step 9: Engineering schematic in the Device section
+- **Incorporated** the client's DreamSleeve anterior/posterior engineering schematic as
+  `assets/schematic.png` (resized to 1600w) — placed as the Device section's lead figure
+  above the live console, in a matching bordered panel with alt text + diegetic figcaption.
+  The four schematic circuits (11 Biceps/Deltoid, 12 Triceps, 13 Posterior Forearm, 14
+  Anterior Forearm) map 1:1 to the four circuits the live console reads.
+- **Recreated the editable pieces as live SVG/HTML** (per client choice — vectorize the
+  parts worth editing, keep the render for the arms):
+  - **Fig. 02 — piezo actuator cross-section**: inline SVG layer stack (protective polymer →
+    gold/ceramic/gold/ceramic/gold electrodes → flexible substrate) with a bending-displacement
+    cue. All labels are editable text.
+  - **Circuit index**: editable HTML table (circuit · muscle group · anterior/posterior view)
+    with cyan/amber accent dots.
+- Two-column detail block collapses to one column ≤920px; no horizontal overflow at 360–390px.
+
+### 2026-11-25 — Step 8: Pediatric focus + Game & Regulatory sections
+- **Reverted** an exploratory adult/GLP-1 "lifespan" broadening back to a **pediatric-only**
+  focus, per client direction. Hero, meta, JSON-LD, mission, market all back to children.
+- **New section — "Play the pathogen" (`#game`).** The gamified narrative made concrete:
+  - Diegetic **Game Selector** panel that auto-scales the visual narrative + haptic texture
+    profile by developmental age cohort (2–3 / 4–6 / 7–9 / 10+), active row highlighted.
+  - **Pathogen game tiles** — Flu-Zilla (influenza), Corona Crusher (COVID-19), and a
+    "one villain per vaccine" library card; titles tagged `[illustrative]`.
+  - **Practice → Compete → Rank** flywheel: free home app (username) → harder device-linked
+    version in-clinic → global/local **leaderboards**, with a diegetic leaderboard panel
+    (mono rows, "you" row highlighted). Scores tagged `[placeholder]`.
+- **New section — "Cleared to ship now" (`#pathway`).** Three-stage regulatory/commercial
+  on-ramp: **Stage 01 NOW** — FDA General Wellness (clinics + home, LIVE); **Stage 02 NEXT** —
+  RCT data → Class II clearance (IN TRIALS); **Stage 03 SCALE** — Medicaid EPSDT reimbursement
+  + HSA/HRA DTC (PLANNED). Reuses the `.pill` vocabulary; added a `--plan` amber pill.
+- **Footer legal rewritten** to the accurate General Wellness posture (not a cleared device;
+  Class II / EPSDT described as planned pathways).
+- Header + footer nav updated (Game, Pathway); keywords + Product JSON-LD enriched (gamified,
+  General Wellness). New CSS appended; new grids collapse to 1 column ≤920px.
+- Verified in headless Chrome (desktop): both sections on-brand, JSON-LD valid, tags balanced,
+  all nav anchors resolve. No JS changes needed — new elements reuse `[data-reveal]`.
 ### 2026-11-25 — Step 1: Project scaffold & plan
 - Established project in `DREAMSUIT - BRAND DESIGN AND UI/`.
 - Confirmed direction with client: **investor-led**, CTA **"Request the investor deck"**,
-  **custom domain** (`dreamsuit.com` placeholder), **marked placeholders** for real data.
+  **custom domain** (`dreamsleeve.com` placeholder), **marked placeholders** for real data.
 - Wrote `PLAN.md`: design-token system (neuro-tech HUD — void navy / cyan signal /
   magenta charge / pass green), type roles (Space Grotesk · Inter · IBM Plex Mono as
   diegetic telemetry), layout concept, section architecture, SEO kit, quality floor.
@@ -59,7 +96,7 @@ Dates are absolute (YYYY-MM-DD).
 - Rendered from HTML/SVG via headless Chrome; `site.webmanifest` added.
 
 ### 2026-11-25 — Step 6: SEO infra + deploy files
-- `sitemap.xml`, `robots.txt`, `CNAME` (dreamsuit.com), `.nojekyll`, and `README.md`
+- `sitemap.xml`, `robots.txt`, `CNAME` (dreamsleeve.com), `.nojekyll`, and `README.md`
   with GitHub Pages deploy steps + the placeholder-swap checklist.
 
 ### 2026-11-25 — Step 7: Review & polish
@@ -70,6 +107,6 @@ Dates are absolute (YYYY-MM-DD).
   stage/panel sync across all four phases. No horizontal overflow at 390px.
 
 #### Open items for the client
-- Confirm final domain; swap `dreamsuit.com` + CTA email / deck link.
+- Confirm final domain; swap `dreamsleeve.com` + CTA email / deck link.
 - Replace all `[placeholder]` figures and traction milestones with verified data.
 - Optional: wire a form service if on-site email capture is desired.

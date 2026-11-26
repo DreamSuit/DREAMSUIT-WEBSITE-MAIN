@@ -1,4 +1,4 @@
-# DreamSuit — Investor/Customer Site · PLAN
+# DreamSleeve — Investor/Customer Site · PLAN
 
 > Living plan. Decisions, design system, architecture, and the step list.
 > Pair with `CHANGELOG.md` for the step-by-step history.
@@ -7,18 +7,26 @@
 
 ## 1. Brief & decisions
 
-**Product.** DreamSuit — a dual-haptic wearable (TENS current + Piezo voltage) that
-gates pediatric procedural pain and renders texture illusions in synchrony, turning a
-needle stick into a gamified "mission." The moat: competitors are single-modality
-(buzzers, VR distractors, passive TENS); **nobody achieves synchronized dual-haptic
-embodiment.**
+**Product.** DreamSleeve — a dual-haptic wearable (TENS current + Piezo voltage) that
+gates **pediatric** procedural pain and renders texture illusions in synchrony, turning a
+needle stick into a gamified "mission." The control app's **Game Selector** auto-scales the
+visual narrative and haptic texture to the child's developmental age; each game has the
+child defeat the exact pathogen the vaccine protects against (Flu-Zilla, Corona Crusher…),
+with a free practice app and global/local **leaderboards**. Commercially it ships under the
+**FDA General Wellness** policy (clinics + home today), collecting RCT data toward **Class II**
+clearance and **Medicaid EPSDT** reimbursement; DTC home sales run via **HSA/HRA**. The moat:
+competitors are single-modality (buzzers, VR distractors, passive TENS); **nobody achieves
+synchronized dual-haptic embodiment.**
+
+> **Audience note (2026-11-25):** scope is **pediatric-focused** (immunizations). An earlier
+> adult/GLP-1 lifespan broadening was explored and then reverted at the client's direction.
 
 **Confirmed decisions (2026-11-25):**
 | Decision | Choice |
 |---|---|
 | Primary audience | **Investors first** (clinical proof supports, below the fold) |
 | Primary CTA | **Request the investor deck** |
-| Hosting | **Custom domain** — placeholder `https://dreamsuit.com`, swap in `index.html` + `CNAME` |
+| Hosting | **Custom domain** — placeholder `https://dreamsleeve.com`, swap in `index.html` + `CNAME` |
 | Content | **Clearly-marked placeholders** for all real stats/team/quotes — nothing fabricated as fact |
 | Stack | Static HTML/CSS/vanilla JS, **no build step**, GitHub Pages ready |
 
@@ -75,14 +83,16 @@ reading column (~1080px); device/telemetry sections break wider into instrument 
 ├▐─ THE BREAKTHROUGH ───────────────────────────┤  SCIENCE (pain-gating + piezo + synchrony)
 ├▐─ THE DEVICE ─────────────────────────────────┤  TELEMETRY HUD (frame 2 recreated, live)
 ├▐─ THE MISSION ────────────────────────────────┤  STICKY 4-stage sequence (cinematic beat)
+├▐─ THE GAME ───────────────────────────────────┤  Game Selector + pathogen tiles + leaderboard loop
 ├▐─ WHY NOW / MARKET ───────────────────────────┤  moat + TAM [placeholders]
+├▐─ THE PATHWAY ────────────────────────────────┤  General Wellness → Class II → EPSDT/HSA/HRA
 ├▐─ TRACTION ───────────────────────────────────┤  milestones [placeholders]
 ├▐─ THE ASK ────────────────────────────────────┤  deck CTA + contact
 └▐─ footer (safety/regulatory, nav) ────────────┘
 ```
 
 ### Principles
-1. **Diegetic instrumentation** — the page behaves like DreamSuit's own console: data looks
+1. **Diegetic instrumentation** — the page behaves like DreamSleeve's own console: data looks
    real, locks engage, bars charge. The UI *is* the argument.
 2. **One cinematic moment** — the sticky Mission sequence. Everything else stays disciplined;
    no fade-up on every card.
