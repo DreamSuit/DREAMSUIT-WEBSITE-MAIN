@@ -6,6 +6,23 @@ Dates are absolute (YYYY-MM-DD).
 
 ## [Unreleased]
 
+### 2026-11-25 — Step 8: Hero TENS vital-monitor layer
+- Added a medical/TENS-device treatment to the hero:
+  - **Dual-channel oscilloscope canvas** — live biphasic TENS pulse train (cyan) +
+    textured piezo waveform (magenta) with a sweeping beam node and graticule, drawn on
+    `<canvas>` with a top-fade mask so the headline stays crisp.
+  - **"LIVE SIGNAL · dual-channel acquisition"** status chip with a blinking dot.
+  - **Electrode contact emitters** — radiating signal rings (cyan + magenta) at the edges.
+  - Live dot on the **ALIGNMENT LOCK** telemetry value.
+- Performance/a11y: animation pauses off-screen (IntersectionObserver) and when the tab is
+  hidden; `prefers-reduced-motion` draws a single static frame; CPU-light (2 shadowed
+  strokes/frame). Electrodes/long chip text hidden on small screens.
+- **Fix:** tuned waveform opacity (0.42) and lane positions so the lede stays readable.
+- **Mobile hardening:** `min-width:0` + `width:100%` on `.hero__inner` and a fitted mobile
+  title clamp. Verified via CDP `setDeviceMetricsOverride` — `scrollWidth == clientWidth`
+  (zero horizontal overflow) at 390px and 360px. (Earlier apparent clipping was a
+  screenshot-capture artifact, not a real overflow.)
+
 ### 2026-11-25 — Step 1: Project scaffold & plan
 - Established project in `DREAMSUIT - BRAND DESIGN AND UI/`.
 - Confirmed direction with client: **investor-led**, CTA **"Request the investor deck"**,

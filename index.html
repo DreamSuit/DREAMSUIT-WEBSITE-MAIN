@@ -104,7 +104,11 @@
 
     <!-- ==== HERO ==== -->
     <section class="hero" id="hero">
+      <canvas class="hero__scope" id="heroScope" aria-hidden="true"></canvas>
+      <span class="electrode electrode--a" aria-hidden="true"></span>
+      <span class="electrode electrode--b" aria-hidden="true"></span>
       <div class="hero__inner">
+        <p class="hero__live" data-reveal><span class="live-dot"></span>Live signal<span class="hero__live-ext"> · dual-channel acquisition</span></p>
         <p class="hero__kicker" data-reveal>Dual-haptic pediatric pain platform</p>
         <h1 class="hero__title" data-reveal>
           Synchronized<br />dual-haptic<br /><em>embodiment.</em>
@@ -136,7 +140,7 @@
           </div>
           <div class="tstat tstat--ok">
             <span class="tstat__label">ALIGNMENT LOCK</span>
-            <span class="tstat__value tstat__value--pass">ENGAGED</span>
+            <span class="tstat__value tstat__value--pass"><span class="live-dot live-dot--pass"></span>ENGAGED</span>
           </div>
         </div>
       </div>
