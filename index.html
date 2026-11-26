@@ -96,12 +96,10 @@
       <a href="#science">Science</a>
       <a href="#game">Game</a>
       <a href="#market">Market</a>
-      <a href="#pathway">Pathway</a>
     </nav>
     <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
       <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
     </button>
-    <a class="btn btn--primary header-cta" href="#ask">Request the deck</a>
   </header>
 
   <main id="top">
@@ -122,8 +120,7 @@
           needle lands, from a child's first vaccine to an adult's weekly GLP-1 pen.
         </p>
         <div class="hero__actions" data-reveal>
-          <a class="btn btn--primary" href="#ask">Request the investor deck</a>
-          <a class="btn btn--ghost" href="#science">See the science<span class="btn__chev" aria-hidden="true">›</span></a>
+          <a class="btn btn--primary" href="#science">See the science<span class="btn__chev" aria-hidden="true">›</span></a>
         </div>
       </div>
       <div class="scroll-cue" aria-hidden="true"><span></span>scroll</div>
@@ -348,125 +345,6 @@
       </div>
     </section>
 
-    <!-- ==== PATHWAY / REGULATORY & REIMBURSEMENT ==== -->
-    <section class="section pathway" id="pathway">
-      <div class="section__head">
-        <h2 class="section__title" data-reveal>Cleared to ship now. Built to get reimbursed.</h2>
-        <p class="section__intro" data-reveal>
-          DreamSleeve launches today as an FDA <em>General Wellness</em> product, then turns every
-          session into the clinical evidence that unlocks medical-device clearance and payer
-          reimbursement. Revenue now; a widening moat with every study.
-        </p>
-      </div>
-
-      <ol class="phases" data-reveal>
-        <li class="phase phase--now">
-          <div class="phase__top">
-            <span class="phase__tag">Stage 01 · Now</span>
-            <span class="pill pill--on">LIVE</span>
-          </div>
-          <h3>Ship under General Wellness</h3>
-          <p>Classified under the FDA's General Wellness policy, DreamSleeve deploys immediately in
-            outpatient clinics and homes for procedural comfort, relaxation, and localized sensory
-            soothing, with no premarket gate between the product and real patients.</p>
-        </li>
-        <li class="phase phase--next">
-          <div class="phase__top">
-            <span class="phase__tag">Stage 02 · Next</span>
-            <span class="pill pill--ready">IN TRIALS</span>
-          </div>
-          <h3>Turn sessions into RCT evidence</h3>
-          <p>Every wellness session collects pristine clinical data across randomized controlled
-            trials: the dossier that supports a subsequent FDA Class II medical-device clearance.</p>
-        </li>
-        <li class="phase phase--scale">
-          <div class="phase__top">
-            <span class="phase__tag">Stage 03 · Scale</span>
-            <span class="pill pill--plan">PLANNED</span>
-          </div>
-          <h3>Unlock reimbursement &amp; DTC</h3>
-          <p>Class II clearance opens Medicaid EPSDT fee-schedule reimbursement, while the
-            direct-to-consumer model lets families buy for home use today with HSA and HRA dollars.</p>
-        </li>
-      </ol>
-
-      <p class="pathway__foot" data-reveal>
-        Two revenue doors open on day one (DTC via HSA/HRA and cash-pay clinic comfort) while the
-        regulatory and reimbursement moat compounds behind them. <mark>[status: pre-submission]</mark>
-      </p>
-    </section>
-
-    <!-- ==== TRACTION ==== -->
-    <section class="section traction" id="traction">
-      <div class="section__head">
-        <h2 class="section__title" data-reveal>Where we are</h2>
-        <p class="section__intro" data-reveal>Replace these milestones with your real timeline before publishing.</p>
-      </div>
-      <ol class="timeline">
-        <li data-reveal><span class="timeline__dot"></span>
-          <h3>Working dual-haptic prototype <mark>INFO NEEDED</mark></h3>
-          <p>Four-circuit sleeve demonstrating locked alignment and synchronized TENS + piezo output.</p>
-        </li>
-        <li data-reveal><span class="timeline__dot"></span>
-          <h3>Bench &amp; benchtop validation <mark>INFO NEEDED</mark></h3>
-          <p>Impedance, latency, and current-ceiling safety characterized against protocol targets.</p>
-        </li>
-        <li data-reveal><span class="timeline__dot"></span>
-          <h3>Clinical pilot, in planning <mark>INFO NEEDED</mark></h3>
-          <p>Site partners across pediatric immunization and adult self-injection, plus an IRB
-            pathway identified for a first in-clinic study.</p>
-        </li>
-        <li data-reveal><span class="timeline__dot timeline__dot--next"></span>
-          <h3>This raise <mark>INFO NEEDED</mark></h3>
-          <p>Funds the clinical pilot, regulatory groundwork, and the first manufacturable sleeve.</p>
-        </li>
-      </ol>
-    </section>
-
-    <!-- ==== ASK / CTA ==== -->
-    <section class="section ask" id="ask">
-      <div class="ask__card" data-reveal>
-        <h2 class="ask__title">See the whole thesis.</h2>
-        <p class="ask__lede">
-          The deck covers the science, the clinical plan, the regulatory path, the team,
-          and the round. Tell us where to send it.
-        </p>
-        <!-- Formspree form endpoint (configured). To change it, swap the form ID in the action. -->
-        <form class="lead-form" action="https://formspree.io/f/mljbvovv" method="POST" novalidate>
-          <div class="lead-form__row">
-            <label>Name
-              <input type="text" name="name" required autocomplete="name" placeholder="Jane Doe" />
-            </label>
-            <label>Email
-              <input type="email" name="email" required autocomplete="email" placeholder="jane@fund.com" />
-            </label>
-          </div>
-          <div class="lead-form__row">
-            <label>Organization / fund
-              <input type="text" name="organization" autocomplete="organization" placeholder="Optional" />
-            </label>
-            <label>I'm interested in
-              <select name="interest">
-                <option>Investor deck</option>
-                <option>Clinical pilot</option>
-                <option>Partnership</option>
-                <option>Other</option>
-              </select>
-            </label>
-          </div>
-          <label>Message
-            <textarea name="message" rows="3" placeholder="Optional. Anything you want us to know."></textarea>
-          </label>
-          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none" />
-          <input type="hidden" name="_subject" value="DreamSleeve: new deck / pilot request" />
-          <div class="lead-form__actions">
-            <button type="submit" class="btn btn--primary btn--lg">Request the deck</button>
-            <span class="lead-form__status" role="status" aria-live="polite"></span>
-          </div>
-        </form>
-        <p class="ask__note">Prefer email? Write to <a href="mailto:invest@dreamsleeve.com">invest@dreamsleeve.com</a> <mark>INFO NEEDED</mark></p>
-      </div>
-    </section>
   </main>
 
   <!-- ==== FOOTER ==== -->
@@ -486,8 +364,6 @@
         <a href="#mission">Mission</a>
         <a href="#game">Game</a>
         <a href="#market">Market</a>
-        <a href="#pathway">Pathway</a>
-        <a href="#ask">Investor deck</a>
       </nav>
     </div>
     <p class="site-footer__legal">
