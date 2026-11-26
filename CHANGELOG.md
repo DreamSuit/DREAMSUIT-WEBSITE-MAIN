@@ -6,6 +6,24 @@ Dates are absolute (YYYY-MM-DD).
 
 ## [Unreleased]
 
+### 2026-11-25 — Step 12: 3D hero (Three.js) — the DreamSleeve neuro-signal field
+- Redesigned the hero visual as a **WebGL 3D scene** (`scripts/hero3d.js`) replacing the 2D
+  oscilloscope: a stylized **bent-arm sleeve** (wireframe shell + fabric bands) carrying the
+  **four circuit arrays** (11-14, colour-matched to the schematic/console — 12 amber, rest
+  cyan), **TENS signal pulses** flowing down the limb, pulsing **electrode emitter rings**,
+  over the engineering-grid motif. Gentle 3/4 sway + mouse parallax.
+- Built with the installed **Three.js skill package** (scene-builder + renderer rules):
+  imperative Three.js, transparent canvas, **unlit additive "HUD" look** (no lights, no
+  post-processing), capped pixel ratio, `setAnimationLoop`, full dispose on `pagehide`.
+- **Self-contained:** Three.js r169 vendored locally at `assets/vendor/three.module.js` and
+  wired via a native **import map** — no CDN runtime dependency, still no build step.
+- Accessibility/perf: `prefers-reduced-motion` renders a single static frame; the loop pauses
+  off-screen (IntersectionObserver) and when the tab is hidden; responsive reframing for
+  portrait/mobile. Verified in headless Chrome (SwiftShader): zero console errors, shaders
+  compile clean, no horizontal overflow at 360/390px.
+- Removed the now-dead 2D oscilloscope JS (`heroScope` IIFE) and its CSS (`.hero__scope`,
+  `.electrode*`, `.hero__live`); kept `.live-dot` (still used by the ALIGNMENT LOCK readout).
+
 ### 2026-11-25 — Step 11: Merged `main` — kept the TENS vital-monitor hero (minus the two lines)
 - Merged `main`, which had independently added an oscilloscope/vital-monitor hero
   (dual-channel TENS + piezo `<canvas>`, electrode emitters, LIVE chip + its CSS/JS).
