@@ -217,6 +217,14 @@ mark {
 .pillar__name { font-size: var(--t-lg); font-weight: 600; margin: 16px 0 12px; }
 .pillar p { color: var(--muted); font-size: var(--t-sm); }
 
+/* ---------- device schematic figure ---------- */
+.schematic { margin: 0 0 32px; border: 1px solid var(--line); border-radius: 20px; overflow: hidden;
+  background: linear-gradient(180deg, #0a1120, #060a13);
+  box-shadow: 0 40px 120px -60px rgba(0,0,0,.9), inset 0 1px 0 rgba(255,255,255,.03); }
+.schematic img { display: block; width: 100%; height: auto; }
+.schematic figcaption { padding: 18px 22px 22px; color: var(--muted); font-size: var(--t-sm); max-width: 90ch; border-top: 1px solid var(--line); }
+.schematic__tag { display: block; font-family: var(--mono); font-size: .64rem; letter-spacing: .12em; text-transform: uppercase; color: var(--signal); margin-bottom: 8px; }
+
 /* ---------- device console ---------- */
 .device { max-width: 1240px; }
 .console {
