@@ -6,6 +6,21 @@ Dates are absolute (YYYY-MM-DD).
 
 ## [Unreleased]
 
+### 2026-11-25 — Step 9: Engineering schematic in the Device section
+- **Incorporated** the client's DreamSleeve anterior/posterior engineering schematic as
+  `assets/schematic.png` (resized to 1600w) — placed as the Device section's lead figure
+  above the live console, in a matching bordered panel with alt text + diegetic figcaption.
+  The four schematic circuits (11 Biceps/Deltoid, 12 Triceps, 13 Posterior Forearm, 14
+  Anterior Forearm) map 1:1 to the four circuits the live console reads.
+- **Recreated the editable pieces as live SVG/HTML** (per client choice — vectorize the
+  parts worth editing, keep the render for the arms):
+  - **Fig. 02 — piezo actuator cross-section**: inline SVG layer stack (protective polymer →
+    gold/ceramic/gold/ceramic/gold electrodes → flexible substrate) with a bending-displacement
+    cue. All labels are editable text.
+  - **Circuit index**: editable HTML table (circuit · muscle group · anterior/posterior view)
+    with cyan/amber accent dots.
+- Two-column detail block collapses to one column ≤920px; no horizontal overflow at 360–390px.
+
 ### 2026-11-25 — Step 8: Pediatric focus + Game & Regulatory sections
 - **Reverted** an exploratory adult/GLP-1 "lifespan" broadening back to a **pediatric-only**
   focus, per client direction. Hero, meta, JSON-LD, mission, market all back to children.

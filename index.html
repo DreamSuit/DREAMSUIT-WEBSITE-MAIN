@@ -253,6 +253,81 @@
         </figcaption>
       </figure>
 
+      <!-- editable vector detail: cross-section + circuit index -->
+      <div class="schematic-detail">
+        <figure class="xsection" data-reveal>
+          <span class="schematic__tag">Fig. 02 · Multi-layer ceramic piezoelectric actuator — cross-section</span>
+          <svg class="xsection__svg" viewBox="0 0 560 280" role="img"
+               aria-label="Cross-section of a multi-layer ceramic piezoelectric actuator. From top: protective polymer coating, gold electrode top, active ceramic piezoelectric layer, gold electrode internal, active ceramic piezoelectric layer, gold electrode bottom, flexible substrate base. Stacking active layers multiplies bending displacement.">
+            <defs>
+              <linearGradient id="xs-gold" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#F3D777"/><stop offset="1" stop-color="#C79A2E"/>
+              </linearGradient>
+              <linearGradient id="xs-ceramic" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#EAF1F6"/><stop offset="1" stop-color="#BED0DC"/>
+              </linearGradient>
+              <marker id="xs-arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+                <path d="M1 1L7 4L1 7Z" fill="#2FE4E4"/>
+              </marker>
+            </defs>
+
+            <g font-family="IBM Plex Mono, monospace" font-size="11">
+              <!-- 7 layers: x=14 w=176, pitch 26 (h18/gap8) -->
+              <g>
+                <rect x="14" y="8"   width="176" height="18" rx="2" fill="#CFE0EC" fill-opacity=".55" stroke="#2a3a52"/>
+                <rect x="14" y="34"  width="176" height="18" rx="2" fill="url(#xs-gold)"/>
+                <rect x="14" y="60"  width="176" height="18" rx="2" fill="url(#xs-ceramic)"/>
+                <rect x="14" y="86"  width="176" height="18" rx="2" fill="url(#xs-gold)"/>
+                <rect x="14" y="112" width="176" height="18" rx="2" fill="url(#xs-ceramic)"/>
+                <rect x="14" y="138" width="176" height="18" rx="2" fill="url(#xs-gold)"/>
+                <rect x="14" y="164" width="176" height="18" rx="2" fill="#16324a" stroke="#2FE4E4" stroke-opacity=".5"/>
+              </g>
+              <!-- leader ticks + labels -->
+              <g fill="#8DA2B8" stroke="#2a3a52">
+                <line x1="190" y1="17"  x2="204" y2="17"/>
+                <line x1="190" y1="43"  x2="204" y2="43"/>
+                <line x1="190" y1="69"  x2="204" y2="69"/>
+                <line x1="190" y1="95"  x2="204" y2="95"/>
+                <line x1="190" y1="121" x2="204" y2="121"/>
+                <line x1="190" y1="147" x2="204" y2="147"/>
+                <line x1="190" y1="173" x2="204" y2="173"/>
+              </g>
+              <g fill="#B9C8D6" stroke="none">
+                <text x="210" y="21">Protective polymer coating</text>
+                <text x="210" y="47">Gold electrode · top</text>
+                <text x="210" y="73">Ceramic piezoelectric · active</text>
+                <text x="210" y="99">Gold electrode · internal</text>
+                <text x="210" y="125">Ceramic piezoelectric · active</text>
+                <text x="210" y="151">Gold electrode · bottom</text>
+                <text x="210" y="177">Flexible substrate base</text>
+              </g>
+              <!-- bending displacement cue -->
+              <path d="M14 4 Q102 -10 190 4" fill="none" stroke="#2FE4E4" stroke-opacity=".7" stroke-dasharray="3 3"/>
+              <line x1="102" y1="8" x2="102" y2="-8" stroke="#2FE4E4" marker-end="url(#xs-arrow)"/>
+              <text x="210" y="243" fill="#2FE4E4" font-size="9" letter-spacing="1.5">BENDING DISPLACEMENT &#8593;  (stacked active layers)</text>
+            </g>
+          </svg>
+          <figcaption>A sub-millimeter stack: layering active ceramic piezo elements multiplies
+            bending displacement at low drive voltage — the mechanism behind the texture channel.</figcaption>
+        </figure>
+
+        <div class="circuit-index" data-reveal>
+          <span class="schematic__tag">Circuit index · four actuator arrays</span>
+          <table>
+            <thead><tr><th>Circuit</th><th>Muscle group</th><th>View</th></tr></thead>
+            <tbody>
+              <tr style="--c:var(--signal)"><td><span class="ci__dot"></span>11</td><td>Biceps / Deltoid Gateway</td><td>Anterior</td></tr>
+              <tr style="--c:var(--amber)"><td><span class="ci__dot"></span>12</td><td>Triceps brachii</td><td>Posterior</td></tr>
+              <tr style="--c:var(--signal)"><td><span class="ci__dot"></span>13</td><td>Posterior Forearm Extensors</td><td>Posterior</td></tr>
+              <tr style="--c:var(--signal)"><td><span class="ci__dot"></span>14</td><td>Anterior Forearm Flexors</td><td>Anterior</td></tr>
+            </tbody>
+          </table>
+          <p class="circuit-index__note">Each array is a triangle of piezo actuators on the
+            transparent fabric substrate, placed over its muscle group and anchored to the
+            anatomical landmarks pinned above.</p>
+        </div>
+      </div>
+
       <div class="console" data-reveal>
         <div class="console__stages" role="list" aria-label="Session stages">
           <span class="stage-chip stage-chip--red" role="listitem">1 · Fitting &amp; Calibration</span>
