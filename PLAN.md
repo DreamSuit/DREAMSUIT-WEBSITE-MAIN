@@ -7,13 +7,19 @@
 
 ## 1. Brief & decisions
 
-**Product.** DreamSuit — an arm-worn dual-haptic sleeve (TENS current + Piezo voltage)
-that gates needle distress, acute procedural anxiety, and somatic muscle guarding, and
-renders texture illusions in synchrony, turning a needle stick into a gamified "mission."
-**Positioning resteered 2026-11-25 from pediatric-only to the full lifespan:** pediatric
-immunizations **and** adult self-injection — GLP-1 regimens and Type 1 Diabetes insulin.
-The moat: competitors are single-modality (buzzers, VR distractors, passive TENS);
-**nobody achieves synchronized dual-haptic embodiment.**
+**Product.** DreamSuit — a dual-haptic wearable (TENS current + Piezo voltage) that
+gates **pediatric** procedural pain and renders texture illusions in synchrony, turning a
+needle stick into a gamified "mission." The control app's **Game Selector** auto-scales the
+visual narrative and haptic texture to the child's developmental age; each game has the
+child defeat the exact pathogen the vaccine protects against (Flu-Zilla, Corona Crusher…),
+with a free practice app and global/local **leaderboards**. Commercially it ships under the
+**FDA General Wellness** policy (clinics + home today), collecting RCT data toward **Class II**
+clearance and **Medicaid EPSDT** reimbursement; DTC home sales run via **HSA/HRA**. The moat:
+competitors are single-modality (buzzers, VR distractors, passive TENS); **nobody achieves
+synchronized dual-haptic embodiment.**
+
+> **Audience note (2026-11-25):** scope is **pediatric-focused** (immunizations). An earlier
+> adult/GLP-1 lifespan broadening was explored and then reverted at the client's direction.
 
 **Confirmed decisions (2026-11-25):**
 | Decision | Choice |
@@ -77,7 +83,9 @@ reading column (~1080px); device/telemetry sections break wider into instrument 
 ├▐─ THE BREAKTHROUGH ───────────────────────────┤  SCIENCE (pain-gating + piezo + synchrony)
 ├▐─ THE DEVICE ─────────────────────────────────┤  TELEMETRY HUD (frame 2 recreated, live)
 ├▐─ THE MISSION ────────────────────────────────┤  STICKY 4-stage sequence (cinematic beat)
+├▐─ THE GAME ───────────────────────────────────┤  Game Selector + pathogen tiles + leaderboard loop
 ├▐─ WHY NOW / MARKET ───────────────────────────┤  moat + TAM [placeholders]
+├▐─ THE PATHWAY ────────────────────────────────┤  General Wellness → Class II → EPSDT/HSA/HRA
 ├▐─ TRACTION ───────────────────────────────────┤  milestones [placeholders]
 ├▐─ THE ASK ────────────────────────────────────┤  deck CTA + contact
 └▐─ footer (safety/regulatory, nav) ────────────┘

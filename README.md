@@ -1,8 +1,9 @@
 # DreamSuit — Investor/Customer Site
 
 A single-page, dependency-free static site for **DreamSuit**, the synchronized
-dual-haptic arm sleeve that gates needle distress across the lifespan — pediatric
-immunizations and adult self-injection alike (GLP-1 regimens, Type 1 Diabetes insulin).
+dual-haptic wearable for pediatric procedural pain — a gamified vaccine experience
+(kids defeat the pathogen the shot protects against), shipping under FDA General
+Wellness with a path to Class II clearance and Medicaid EPSDT reimbursement.
 Built to deploy on GitHub Pages with no build step.
 
 ## Structure
