@@ -1,0 +1,14 @@
+{
+  "name": "DreamSuit",
+  "short_name": "DreamSuit",
+  "description": "Synchronized dual-haptic embodiment — a wearable that gates pediatric procedural pain.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05070E",
+  "theme_color": "#05070E",
+  "icons": [
+    { "src": "assets/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "assets/favicon.svg", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

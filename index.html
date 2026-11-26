@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- ==== PRIMARY META ==== -->
+  <title>DreamSuit — Synchronized Dual-Haptic Embodiment for Pediatric Pain</title>
+  <meta name="description" content="DreamSuit is a wearable that fuses TENS neurostimulation and piezo-haptic texture into one synchronized signal — gating pediatric procedural pain at the source and turning the needle into a game kids win." />
+  <meta name="keywords" content="DreamSuit, dual-haptic, pediatric pain, procedural pain, TENS, piezo haptics, neurostimulation, pain gating, medical wearable, needle anxiety" />
+  <meta name="author" content="DreamSuit" />
+  <meta name="theme-color" content="#05070E" />
+  <meta name="color-scheme" content="dark" />
+
+  <!-- Swap this single line + /CNAME when the final domain is live -->
+  <link rel="canonical" href="https://dreamsuit.com/" />
+
+  <!-- ==== OPEN GRAPH ==== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="DreamSuit" />
+  <meta property="og:title" content="DreamSuit — Synchronized Dual-Haptic Embodiment" />
+  <meta property="og:description" content="One synchronized signal — TENS + piezo — that gates pediatric procedural pain at the source. Nobody else achieves dual-haptic embodiment." />
+  <meta property="og:url" content="https://dreamsuit.com/" />
+  <meta property="og:image" content="https://dreamsuit.com/assets/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="DreamSuit — a telemetry console reading ALIGNMENT LOCK ENGAGED across four haptic circuits, over the words Synchronized Dual-Haptic Embodiment." />
+
+  <!-- ==== TWITTER ==== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DreamSuit — Synchronized Dual-Haptic Embodiment" />
+  <meta name="twitter:description" content="A wearable that fuses TENS + piezo into one signal to gate pediatric procedural pain. Turn the needle into a game kids win." />
+  <meta name="twitter:image" content="https://dreamsuit.com/assets/og-image.png" />
+  <meta name="twitter:image:alt" content="DreamSuit dual-haptic telemetry console." />
+
+  <!-- ==== ICONS / MANIFEST ==== -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- ==== FONTS ==== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/main.css" />
+
+  <!-- ==== STRUCTURED DATA ==== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://dreamsuit.com/#org",
+        "name": "DreamSuit",
+        "url": "https://dreamsuit.com/",
+        "logo": "https://dreamsuit.com/assets/favicon-32.png",
+        "description": "DreamSuit builds synchronized dual-haptic wearables that gate pediatric procedural pain."
+      },
+      {
+        "@type": "Product",
+        "name": "DreamSuit",
+        "brand": { "@id": "https://dreamsuit.com/#org" },
+        "category": "Medical wearable / procedural pain management",
+        "description": "A wearable sleeve that fuses TENS neurostimulation and piezo-haptic texture into one synchronized signal to gate pediatric procedural pain and reduce needle anxiety.",
+        "audience": { "@type": "MedicalAudience", "audienceType": "Pediatric clinicians and caregivers" }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#problem">Skip to content</a>
+
+  <!-- Engineering grid + scroll progress rail -->
+  <div class="grid-canvas" aria-hidden="true"></div>
+  <div class="rail" aria-hidden="true"><span class="rail__charge" id="railCharge"></span></div>
+
+  <!-- ==== HEADER ==== -->
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#top" aria-label="DreamSuit home">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke-width="1.6">
+          <circle cx="12" cy="12" r="4" />
+          <path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3" />
+        </svg>
+      </span>
+      <span class="brand__word">DreamSuit</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#problem">Problem</a>
+      <a href="#science">Science</a>
+      <a href="#device">Device</a>
+      <a href="#mission">Mission</a>
+      <a href="#market">Market</a>
+    </nav>
+    <a class="btn btn--primary header-cta" href="#ask">Request the deck</a>
+  </header>
+
+  <main id="top">
+
+    <!-- ==== HERO ==== -->
+    <section class="hero" id="hero">
+      <div class="hero__inner">
+        <p class="hero__kicker" data-reveal>Dual-haptic pediatric pain platform</p>
+        <h1 class="hero__title" data-reveal>
+          Synchronized<br />dual-haptic<br /><em>embodiment.</em>
+        </h1>
+        <p class="hero__lede" data-reveal>
+          Every rival soothes with one trick — a buzz, a cartoon, a trickle of current.
+          DreamSuit fuses neurostimulation and piezo-haptic texture into a single
+          signal the nervous system can't tell from reality, gating a child's pain
+          before the needle ever lands.
+        </p>
+        <div class="hero__actions" data-reveal>
+          <a class="btn btn--primary" href="#ask">Request the investor deck</a>
+          <a class="btn btn--ghost" href="#device">See the device<span class="btn__chev" aria-hidden="true">›</span></a>
+        </div>
+
+        <!-- live telemetry strip -->
+        <div class="telemetry-strip" data-reveal aria-label="Live system readout">
+          <div class="tstat">
+            <span class="tstat__label">TENS CURRENT</span>
+            <span class="tstat__value" data-count="35" data-suffix=" mA">0 mA</span>
+          </div>
+          <div class="tstat">
+            <span class="tstat__label">PIEZO VOLTAGE</span>
+            <span class="tstat__value" data-count="85" data-suffix=" V P-P">0 V P-P</span>
+          </div>
+          <div class="tstat">
+            <span class="tstat__label">SYNC LATENCY</span>
+            <span class="tstat__value" data-count="4" data-suffix=" ms">0 ms</span>
+          </div>
+          <div class="tstat tstat--ok">
+            <span class="tstat__label">ALIGNMENT LOCK</span>
+            <span class="tstat__value tstat__value--pass">ENGAGED</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span></span>scroll</div>
+    </section>
+
+    <!-- ==== PROBLEM ==== -->
+    <section class="section problem" id="problem">
+      <div class="section__head">
+        <h2 class="section__title" data-reveal>Escaping the single-modality trap</h2>
+        <p class="section__intro" data-reveal>
+          Three categories of device claim to manage procedural pain. Each solves one
+          axis and fails the rest. None of them close the loop between what a child
+          <em>sees</em> and what a child <em>feels</em>.
+        </p>
+      </div>
+
+      <div class="trap-grid">
+        <article class="trap" data-reveal>
+          <div class="trap__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke-width="1.5">
+              <circle cx="24" cy="24" r="7" /><path d="M24 11v-4M24 41v-4M11 24H7M41 24h-4" />
+              <path d="M33 15c3 3 4.5 6 4.5 9M15 33c-3-3-4.5-6-4.5-9" stroke-dasharray="2 3" />
+            </svg>
+          </div>
+          <h3 class="trap__name">The superficial buzzers</h3>
+          <p class="trap__tag"><span>Competitors</span> bHaptics · Woojer · CuteCircuit SoundShirt · TeslaSuit</p>
+          <p class="trap__flaw"><span>The flaw</span> 100% vibrotactile. Rigid mechanical buzzing that can't produce deep-tissue pressure or somatic pain gating — and adds its own mechanical hum.</p>
+        </article>
+
+        <article class="trap" data-reveal>
+          <div class="trap__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke-width="1.5">
+              <rect x="7" y="12" width="34" height="22" rx="2" /><path d="M20 40h8M24 34v6" />
+              <circle cx="24" cy="23" r="4" /><path d="M16 23h-2M34 23h-2" />
+            </svg>
+          </div>
+          <h3 class="trap__name">The cognitive distractors</h3>
+          <p class="trap__tag"><span>Competitors</span> Stanford CHARIOT · Piñatas · Buzzy Bee</p>
+          <p class="trap__flaw"><span>The flaw</span> Passive visual distraction. Good at capturing attention, but it never intercepts the slow, sharp pain signal already climbing the spinal cord.</p>
+        </article>
+
+        <article class="trap" data-reveal>
+          <div class="trap__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" stroke-width="1.5">
+              <path d="M10 24h9M29 24h9" /><path d="M19 19l5 5-5 5M29 19l-5 5 5 5" />
+              <path d="M22 14l-3 4M26 30l-3 4" stroke-dasharray="2 3" />
+            </svg>
+          </div>
+          <h3 class="trap__name">The passive regulators</h3>
+          <p class="trap__tag"><span>Competitors</span> Consumer TENS units</p>
+          <p class="trap__flaw"><span>The flaw</span> Zero visuo-haptic synchrony. No spatial resolution, dynamic movement, or ultra-low latency — the three things a neurological illusion requires.</p>
+        </article>
+      </div>
+
+      <p class="verdict" data-reveal>
+        None of these legacy approaches achieve synchronized, dual-haptic embodiment.
+      </p>
+    </section>
+
+    <!-- ==== SCIENCE ==== -->
+    <section class="section science" id="science">
+      <div class="section__head">
+        <h2 class="section__title" data-reveal>Two signals. One nervous system. No gap.</h2>
+        <p class="section__intro" data-reveal>
+          DreamSuit runs two physiologic channels in lockstep under a sub-5-millisecond
+          sync budget — tight enough that the brain binds them into a single, believable
+          event instead of two competing sensations.
+        </p>
+      </div>
+
+      <div class="pillars">
+        <article class="pillar" data-reveal>
+          <span class="pillar__index" aria-hidden="true">01</span>
+          <h3 class="pillar__name">Gate the pain</h3>
+          <p>A tuned TENS field recruits large-diameter sensory fibers to close the dorsal-horn
+            gate — the body's own volume knob on sharp pain — before the nociceptive signal arrives.</p>
+        </article>
+        <article class="pillar" data-reveal>
+          <span class="pillar__index" aria-hidden="true">02</span>
+          <h3 class="pillar__name">Render the texture</h3>
+          <p>Layered piezo actuators paint pressure, movement, and fine texture onto the skin
+            with spatial resolution a vibration motor can't reach — a felt surface, not a buzz.</p>
+        </article>
+        <article class="pillar" data-reveal>
+          <span class="pillar__index" aria-hidden="true">03</span>
+          <h3 class="pillar__name">Bind them in time</h3>
+          <p>A shared clock fires both channels in visuo-haptic synchrony. When sight, current,
+            and texture agree within milliseconds, the brain commits to the illusion — embodiment.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==== DEVICE / TELEMETRY HUD ==== -->
+    <section class="section device" id="device">
+      <div class="section__head">
+        <h2 class="section__title" data-reveal>The console that makes the invisible legible</h2>
+        <p class="section__intro" data-reveal>
+          Every circuit on the sleeve reports impedance, alignment, and lock state in real
+          time. Clinicians see exactly what the child's skin is receiving — and a hard
+          pediatric ceiling keeps it safe by design.
+        </p>
+      </div>
+
+      <div class="console" data-reveal>
+        <div class="console__stages" role="list" aria-label="Session stages">
+          <span class="stage-chip stage-chip--red" role="listitem">1 · Fitting &amp; Calibration</span>
+          <span class="stage-chip stage-chip--amber" role="listitem">2 · Antiseptic Prep &amp; Shield Charge</span>
+          <span class="stage-chip stage-chip--green" role="listitem">3 · Shield Strike &amp; Injection Window</span>
+          <span class="stage-chip stage-chip--flag" role="listitem">4 · Victory Cascade</span>
+        </div>
+
+        <div class="console__body">
+          <div class="console__grid">
+            <h3 class="console__heading">Real-time telemetry &amp; alignment status</h3>
+            <div class="circuits">
+              <article class="circuit" data-circuit>
+                <header><b>Circuit 11</b><span>Deltoid / Biceps Gateway</span></header>
+                <dl>
+                  <div><dt>Z_IMPEDANCE</dt><dd>810 Ω <i class="pass">Pass</i></dd></div>
+                  <div><dt>ALIGNMENT LOCK</dt><dd class="pass">ENGAGED</dd></div>
+                </dl>
+                <span class="circuit__lock" aria-label="Lock engaged">🔒</span>
+              </article>
+              <article class="circuit" data-circuit>
+                <header><b>Circuit 12</b><span>Triceps Brachii</span></header>
+                <dl>
+                  <div><dt>Z_IMPEDANCE</dt><dd>940 Ω <i class="pass">Pass</i></dd></div>
+                  <div><dt>ALIGNMENT LOCK</dt><dd class="pass">ENGAGED</dd></div>
+                </dl>
+                <span class="circuit__lock" aria-label="Lock engaged">🔒</span>
+              </article>
+              <article class="circuit" data-circuit>
+                <header><b>Circuit 13</b><span>Posterior Forearm Extensors</span></header>
+                <dl>
+                  <div><dt>Z_IMPEDANCE</dt><dd>620 Ω <i class="pass">Pass</i></dd></div>
+                  <div><dt>ALIGNMENT LOCK</dt><dd class="pass">ENGAGED</dd></div>
+                </dl>
+                <span class="circuit__lock" aria-label="Lock engaged">🔒</span>
+              </article>
+              <article class="circuit" data-circuit>
+                <header><b>Circuit 14</b><span>Anterior Forearm Flexors</span></header>
+                <dl>
+                  <div><dt>Z_IMPEDANCE</dt><dd>715 Ω <i class="pass">Pass</i></dd></div>
+                  <div><dt>ALIGNMENT LOCK</dt><dd class="pass">ENGAGED</dd></div>
+                </dl>
+                <span class="circuit__lock" aria-label="Lock engaged">🔒</span>
+              </article>
+            </div>
+          </div>
+
+          <aside class="console__panel">
+            <div class="meter">
+              <div class="meter__col">
+                <span class="meter__cap">TENS CURRENT</span>
+                <span class="meter__range">0–60 mA</span>
+                <div class="meter__track"><span class="meter__fill" style="--lvl:58%"></span></div>
+                <span class="meter__read">Level 2 · <i>Therapeutic Pre-Warming</i></span>
+              </div>
+              <div class="meter__col">
+                <span class="meter__cap">PIEZO VOLTAGE</span>
+                <span class="meter__range">0–100 V P-P</span>
+                <div class="meter__track"><span class="meter__fill meter__fill--pulse" style="--lvl:85%"></span></div>
+                <span class="meter__read">85 V P-P · <i>Texture rendering</i></span>
+              </div>
+            </div>
+
+            <div class="safety">
+              <div class="safety__row">
+                <div>
+                  <b>Master somatic limiter</b>
+                  <span>Prevent TENS &gt; 40 mA (pediatric ceiling)</span>
+                </div>
+                <span class="pill pill--on">ACTIVE</span>
+              </div>
+              <div class="safety__row">
+                <div>
+                  <b>TMO emergency stop</b>
+                  <span>Voice control · detecting phoneme <i>"TMO"</i></span>
+                </div>
+                <span class="pill pill--ready">READY</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==== MISSION (sticky cinematic sequence) ==== -->
+    <section class="mission" id="mission" aria-label="The DreamSuit mission flow">
+      <div class="mission__sticky">
+        <div class="mission__stageboard">
+          <p class="mission__eyebrow">The session, as the child plays it</p>
+          <ol class="mission__list">
+            <li data-stage="0"><span class="mission__num">1</span><span class="mission__label">Fitting &amp; Calibration</span></li>
+            <li data-stage="1"><span class="mission__num">2</span><span class="mission__label">Antiseptic Prep &amp; Shield Charge</span></li>
+            <li data-stage="2"><span class="mission__num">3</span><span class="mission__label">Shield Strike &amp; Injection Window</span></li>
+            <li data-stage="3"><span class="mission__num">4</span><span class="mission__label">Victory Cascade</span></li>
+          </ol>
+        </div>
+        <div class="mission__screen" data-mission-screen>
+          <div class="mission__panel" data-stage-panel="0">
+            <span class="mission__badge" style="--c:var(--red)">PHASE 01</span>
+            <h3>The suit wakes up and finds the body.</h3>
+            <p>Four circuits lock onto the arm, impedance is checked, alignment engages.
+              To the child it's a hero suit booting up — not a medical fitting.</p>
+          </div>
+          <div class="mission__panel" data-stage-panel="1">
+            <span class="mission__badge" style="--c:var(--amber)">PHASE 02</span>
+            <h3>The shield charges while the skin is prepped.</h3>
+            <p>TENS pre-warms the gate; piezo layers the "shield" texture across the site.
+              The antiseptic swab becomes the moment the armor comes online.</p>
+          </div>
+          <div class="mission__panel" data-stage-panel="2">
+            <span class="mission__badge" style="--c:var(--pass)">PHASE 03</span>
+            <h3>The needle lands inside a closed gate.</h3>
+            <p>Dual-haptic embodiment peaks exactly across the injection window. The sharp
+              signal arrives to find the door already shut — and a texture that owns the skin.</p>
+          </div>
+          <div class="mission__panel" data-stage-panel="3">
+            <span class="mission__badge mission__badge--win" style="--c:var(--signal)">VICTORY</span>
+            <h3>They win. The needle was the boss they beat.</h3>
+            <p>A victory cascade rewards the hold. The memory that consolidates isn't fear —
+              it's a level cleared. That's the outcome that compounds across a childhood of care.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==== MARKET / WHY NOW ==== -->
+    <section class="section market" id="market">
+      <div class="section__head">
+        <h2 class="section__title" data-reveal>Why this wins, and why now</h2>
+        <p class="section__intro" data-reveal>
+          The enabling pieces — low-latency piezo arrays, flexible electrode fabric, and
+          on-device sync — only recently got small, cheap, and safe enough to wear on a
+          child's arm. DreamSuit is the first to put them under one clock.
+        </p>
+      </div>
+
+      <div class="moat">
+        <article class="moat__card" data-reveal>
+          <h3>The category of one</h3>
+          <p>Buzzers, distractors, and TENS units each own a corner. DreamSuit is the only
+            platform closing the visuo-haptic loop — a defensible wedge, not a feature race.</p>
+        </article>
+        <article class="moat__card" data-reveal>
+          <h3>Built-in safety story</h3>
+          <p>A hard pediatric current ceiling and voice-triggered emergency stop are core
+            architecture, not add-ons — the language regulators and hospitals already speak.</p>
+        </article>
+        <article class="moat__card" data-reveal>
+          <h3>One platform, many procedures</h3>
+          <p>Vaccinations, IV starts, blood draws, wound care, burn dressing changes —
+            any routine pediatric pain event is an addressable session.</p>
+        </article>
+      </div>
+
+      <div class="stats" data-reveal>
+        <div class="stat">
+          <span class="stat__num" data-count="2.0" data-suffix="B+">0</span>
+          <span class="stat__label">Pediatric needle procedures / yr <mark>[placeholder]</mark></span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="63" data-suffix="%">0</span>
+          <span class="stat__label">Of children report needle fear <mark>[placeholder]</mark></span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="4" data-prefix="$" data-suffix="B">0</span>
+          <span class="stat__label">Serviceable market <mark>[placeholder]</mark></span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="4" data-suffix=" ms">0</span>
+          <span class="stat__label">Visuo-haptic sync budget</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==== TRACTION ==== -->
+    <section class="section traction" id="traction">
+      <div class="section__head">
+        <h2 class="section__title" data-reveal>Where we are</h2>
+        <p class="section__intro" data-reveal>Replace these milestones with your real timeline before publishing.</p>
+      </div>
+      <ol class="timeline">
+        <li data-reveal><span class="timeline__dot"></span>
+          <h3>Working dual-haptic prototype <mark>[placeholder]</mark></h3>
+          <p>Four-circuit sleeve demonstrating locked alignment and synchronized TENS + piezo output.</p>
+        </li>
+        <li data-reveal><span class="timeline__dot"></span>
+          <h3>Bench &amp; benchtop validation <mark>[placeholder]</mark></h3>
+          <p>Impedance, latency, and current-ceiling safety characterized against protocol targets.</p>
+        </li>
+        <li data-reveal><span class="timeline__dot"></span>
+          <h3>Clinical pilot — in planning <mark>[placeholder]</mark></h3>
+          <p>Pediatric site partner and IRB pathway identified for a first in-clinic study.</p>
+        </li>
+        <li data-reveal><span class="timeline__dot timeline__dot--next"></span>
+          <h3>This raise <mark>[placeholder]</mark></h3>
+          <p>Funds the clinical pilot, regulatory groundwork, and the first manufacturable sleeve.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ==== ASK / CTA ==== -->
+    <section class="section ask" id="ask">
+      <div class="ask__card" data-reveal>
+        <h2 class="ask__title">See the whole thesis.</h2>
+        <p class="ask__lede">
+          The deck covers the science, the clinical plan, the regulatory path, the team,
+          and the round. Tell us where to send it.
+        </p>
+        <div class="ask__actions">
+          <!-- Swap the mailto for your deck link / data-room when ready -->
+          <a class="btn btn--primary btn--lg" href="mailto:invest@dreamsuit.com?subject=DreamSuit%20investor%20deck%20request&amp;body=Hi%20DreamSuit%20team%2C%20please%20send%20the%20investor%20deck.%20Fund%2Fname%3A%20">Request the investor deck</a>
+          <a class="btn btn--ghost btn--lg" href="mailto:hello@dreamsuit.com?subject=DreamSuit%20pilot%20enquiry">Talk about a clinical pilot</a>
+        </div>
+        <p class="ask__note">Prefer a call? Email <a href="mailto:invest@dreamsuit.com">invest@dreamsuit.com</a> <mark>[placeholder address]</mark></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==== FOOTER ==== -->
+  <footer class="site-footer">
+    <div class="site-footer__top">
+      <div class="brand brand--footer">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke-width="1.6">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3" />
+          </svg>
+        </span>
+        <span class="brand__word">DreamSuit</span>
+      </div>
+      <nav class="site-footer__nav" aria-label="Footer">
+        <a href="#problem">Problem</a>
+        <a href="#science">Science</a>
+        <a href="#device">Device</a>
+        <a href="#mission">Mission</a>
+        <a href="#market">Market</a>
+        <a href="#ask">Investor deck</a>
+      </nav>
+    </div>
+    <p class="site-footer__legal">
+      DreamSuit is an investigational device concept. Not cleared or approved by any
+      regulatory authority; not available for sale. Figures marked <mark>[placeholder]</mark>
+      are illustrative pending verification. © <span id="year">2026</span> DreamSuit.
+    </p>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
