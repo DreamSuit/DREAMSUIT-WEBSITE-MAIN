@@ -6,6 +6,21 @@ Dates are absolute (YYYY-MM-DD).
 
 ## [Unreleased]
 
+### 2026-11-25 — Step 13: Re-broadened to the dual audience (pediatric + adult self-injection)
+- Added the adult audience back alongside pediatric, per client's therapeutic-objective copy.
+  DreamSleeve now mitigates **needle distress, acute procedural anxiety, and somatic muscle
+  guarding** across **routine pediatric immunizations AND adult self-injections — GLP-1
+  regimens and Type 1 Diabetes insulin.** The gamified pediatric content stays as the kids' segment.
+- **Science** intro now leads with that objective + dual audience, and the "passive medical
+  encounter → active, embodied experience" framing (TENS Gate Control + piezo texture are the pillars).
+- **Hero** lede: "from a child's first vaccine to an adult's weekly GLP-1 pen."
+- **Problem** intro → "a patient … at any age." **Device** → "clinicians and self-injecting
+  patients" + **profile-matched ceiling** (PED 40 mA / ADULT 60 mA). **Market** moat → "one
+  platform, a lifetime of injections." **Traction** → peds + adult self-injection sites.
+- **Meta/SEO/JSON-LD** broadened: title → "…for Needle Distress"; description, keywords, OG,
+  Twitter, Org + Product descriptions, and `MedicalAudience` now include adult GLP-1 / insulin
+  self-injectors. JSON-LD validated.
+
 ### 2026-11-25 — Step 12: 3D hero (Three.js) — the DreamSleeve neuro-signal field
 - Redesigned the hero visual as a **WebGL 3D scene** (`scripts/hero3d.js`) replacing the 2D
   oscilloscope: a stylized **bent-arm sleeve** (wireframe shell + fabric bands) carrying the
