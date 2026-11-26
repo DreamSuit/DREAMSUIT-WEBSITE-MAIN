@@ -6,6 +6,24 @@ Dates are absolute (YYYY-MM-DD).
 
 ## [Unreleased]
 
+### 2026-11-26 — Step 27: Remove the Device section
+- **Removed the entire Device section** — the "console that makes the invisible legible"
+  intro, the engineering schematic (Fig. 01/02 + cross-section + circuit index), and the
+  Chronosomatic Injection Synchronization Pipeline (stage tabs + live telemetry console).
+- Cleaned up everything it touched: nav + footer `#device` links (hero "See the device"
+  CTA repointed to `#science`), the `.schematic`/`.console`/`.phase-*`/`.circuit`/`.meter`
+  CSS and dead responsive rules, the pipeline-tabs JS controller, the README device
+  walkthrough + architecture references, and the now-unused `schematic.webp`/`schematic.png`
+  + device screenshots. Restored the shared `.pill` base styles (still used by the Pathway
+  status pills). Updated line-count figures in the README.
+
+### 2026-11-26 — Step 26: Trim competitor content + schematic caption
+- **Removed the Problem section** entirely ("Escaping the single-modality trap" — the three
+  competitor-category cards and the verdict bar), including its nav + footer links, the dead
+  `.trap*`/`.verdict` CSS, the README walkthrough entry, and `docs/screenshots/problem.png`.
+- **Removed the Fig. 01 figcaption** under the main engineering schematic. Fig. 02
+  (cross-section) and the Circuit-index caption are unchanged.
+
 ### 2026-11-26 — Step 25: Mobile nav + analytics + remove Team section
 - **Mobile hamburger nav**: below 920px the primary nav no longer vanishes — it collapses into
   an accessible dropdown behind an animated hamburger toggle (`aria-expanded`/`aria-controls`,
