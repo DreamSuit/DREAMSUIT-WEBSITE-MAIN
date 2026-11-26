@@ -6,6 +6,14 @@ Dates are absolute (YYYY-MM-DD).
 
 ## [Unreleased]
 
+### 2026-11-25 — Step 11: Merged `main` — kept the TENS vital-monitor hero (minus the two lines)
+- Merged `main`, which had independently added an oscilloscope/vital-monitor hero
+  (dual-channel TENS + piezo `<canvas>`, electrode emitters, LIVE chip + its CSS/JS).
+  **Kept that hero visual**, but removed the "Live signal · dual-channel acquisition" chip
+  and the "Dual-haptic pediatric pain platform" kicker (per client request) and applied the
+  DreamSleeve rename to it. Pulled in main's `.gitignore` (ignore `.claude/`) and the
+  hero-oscilloscope `scripts/main.js`. The live-dot now sits on the ALIGNMENT LOCK telemetry.
+
 ### 2026-11-25 — Step 10: Rename to DreamSleeve + hero cleanup
 - **Renamed the brand to DreamSleeve** everywhere (matches the schematic's label): title,
   meta/keywords/author, Open Graph + Twitter, JSON-LD Org/Product, header/footer wordmark,
@@ -52,7 +60,6 @@ Dates are absolute (YYYY-MM-DD).
   General Wellness). New CSS appended; new grids collapse to 1 column ≤920px.
 - Verified in headless Chrome (desktop): both sections on-brand, JSON-LD valid, tags balanced,
   all nav anchors resolve. No JS changes needed — new elements reuse `[data-reveal]`.
-
 ### 2026-11-25 — Step 1: Project scaffold & plan
 - Established project in `DREAMSUIT - BRAND DESIGN AND UI/`.
 - Confirmed direction with client: **investor-led**, CTA **"Request the investor deck"**,
