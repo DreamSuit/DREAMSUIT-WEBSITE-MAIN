@@ -8,14 +8,24 @@ Built to deploy on GitHub Pages with no build step.
 
 ## Structure
 ```
-index.html          # the whole page + SEO/OG/JSON-LD
+index.html          # the whole page + SEO/OG/JSON-LD + import map
 styles/main.css     # design system (neuro-tech HUD)
 scripts/main.js     # scroll experience + live telemetry (vanilla JS)
-assets/             # favicon set + og-image.png
+scripts/hero3d.js   # 3D hero scene — Three.js (ES module, import-mapped to "three")
+assets/
+  schematic.png     # DreamSleeve engineering schematic (Device section)
+  vendor/three.module.js  # Three.js r169, vendored (no CDN, no build step)
 site.webmanifest    # PWA manifest
 sitemap.xml robots.txt CNAME .nojekyll
 PLAN.md CHANGELOG.md
 ```
+
+**3D hero:** `scripts/hero3d.js` renders the DreamSleeve neuro-signal scene (bent-arm
+sleeve + circuits 11–14 + TENS pulses + electrode rings) with Three.js. It's an ES module
+resolved through the `<script type="importmap">` in `index.html` that points `"three"` at the
+locally-vendored `assets/vendor/three.module.js` — so the site stays self-contained with no
+build step and no CDN runtime dependency. The scene respects `prefers-reduced-motion`, pauses
+off-screen, and degrades gracefully (the page still works if WebGL is unavailable).
 
 ## Deploy to GitHub Pages
 1. Create a repo and push these files to the default branch (root, not `/docs`).

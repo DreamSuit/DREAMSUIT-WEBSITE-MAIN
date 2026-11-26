@@ -153,6 +153,13 @@ mark {
   align-items: center; text-align: center; padding: 120px var(--gutter) 80px; position: relative;
 }
 .hero__inner { max-width: 940px; width: 100%; min-width: 0; position: relative; z-index: 2; }
+
+/* hero 3D scene canvas — sits behind the headline, gently masked at top/bottom */
+.hero__gl {
+  position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; display: block; pointer-events: none;
+  -webkit-mask-image: linear-gradient(180deg, transparent 2%, #000 20%, #000 90%, transparent 100%);
+          mask-image: linear-gradient(180deg, transparent 2%, #000 20%, #000 90%, transparent 100%);
+}
 .hero__kicker {
   font-family: var(--mono); font-size: var(--t-sm); letter-spacing: .18em; text-transform: uppercase;
   color: var(--signal); margin-bottom: 26px;
@@ -185,20 +192,7 @@ mark {
 .scroll-cue span { width: 1px; height: 34px; background: linear-gradient(var(--signal), transparent); animation: cue 1.8s var(--ease) infinite; }
 @keyframes cue { 0%,100%{opacity:.3; transform:scaleY(.6);} 50%{opacity:1; transform:scaleY(1);} }
 
-/* ---------- hero: TENS vital-monitor layer ---------- */
-.hero__scope {
-  position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none;
-  -webkit-mask-image: linear-gradient(180deg, transparent 16%, #000 46%, #000 100%);
-          mask-image: linear-gradient(180deg, transparent 16%, #000 46%, #000 100%);
-}
-
-/* "LIVE SIGNAL" status chip */
-.hero__live {
-  display: inline-flex; align-items: center; gap: 9px; margin-bottom: 22px;
-  font-family: var(--mono); font-size: .72rem; letter-spacing: .14em; text-transform: uppercase;
-  color: var(--muted); border: 1px solid var(--line); border-radius: 100px; padding: 7px 15px 7px 12px;
-  background: rgba(11, 18, 32, .55); backdrop-filter: blur(6px); max-width: 100%;
-}
+/* ---------- hero: live telemetry dot (ALIGNMENT LOCK readout) ---------- */
 .live-dot {
   width: 8px; height: 8px; border-radius: 50%; flex: none; background: var(--signal);
   box-shadow: 0 0 10px var(--signal); animation: blink 1.6s steps(1, end) infinite;
@@ -207,25 +201,6 @@ mark {
 @keyframes blink { 0%, 62% { opacity: 1; } 63%, 100% { opacity: .22; } }
 
 .tstat__value--pass { display: inline-flex; align-items: center; gap: 8px; }
-
-/* electrode contact emitters — radiating signal rings */
-.electrode {
-  position: absolute; width: 13px; height: 13px; border-radius: 50%; z-index: 1; pointer-events: none;
-  background: radial-gradient(circle, var(--signal) 0 32%, transparent 68%); box-shadow: 0 0 14px var(--signal);
-}
-.electrode::before, .electrode::after {
-  content: ""; position: absolute; top: 50%; left: 50%; width: 13px; height: 13px;
-  transform: translate(-50%, -50%); border-radius: 50%; border: 1px solid var(--signal); opacity: 0;
-  animation: emit 3.4s var(--ease) infinite;
-}
-.electrode::after { animation-delay: 1.7s; }
-.electrode--a { top: 25%; left: 6.5%; }
-.electrode--b {
-  top: 58%; right: 7.5%;
-  background: radial-gradient(circle, var(--pulse) 0 32%, transparent 68%); box-shadow: 0 0 14px var(--pulse);
-}
-.electrode--b::before, .electrode--b::after { border-color: var(--pulse); animation-duration: 3.9s; }
-@keyframes emit { 0% { opacity: .65; width: 13px; height: 13px; } 100% { opacity: 0; width: 86px; height: 86px; } }
 
 /* ---------- reveal animation ---------- */
 [data-reveal] { opacity: 0; transform: translateY(26px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
@@ -501,9 +476,6 @@ mark {
   .console__stages { grid-template-columns: 1fr 1fr; }
   .hero__title { font-size: clamp(2rem, 11vw, 3.2rem); }
   .meter__track { height: 90px; }
-  .electrode { display: none; }
-  .hero__live-ext { display: none; }
-  .hero__live { font-size: .68rem; }
 }
 
 /* ============================================================

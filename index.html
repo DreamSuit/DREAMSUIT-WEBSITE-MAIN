@@ -105,9 +105,7 @@
 
     <!-- ==== HERO ==== -->
     <section class="hero" id="hero">
-      <canvas class="hero__scope" id="heroScope" aria-hidden="true"></canvas>
-      <span class="electrode electrode--a" aria-hidden="true"></span>
-      <span class="electrode electrode--b" aria-hidden="true"></span>
+      <canvas class="hero__gl" id="heroGL" aria-hidden="true"></canvas>
       <div class="hero__inner">
         <h1 class="hero__title" data-reveal>
           Synchronized<br />dual-haptic<br /><em>embodiment.</em>
@@ -721,5 +719,11 @@
   </footer>
 
   <script src="scripts/main.js" defer></script>
+
+  <!-- Hero 3D scene — Three.js (vendored locally, no build step) -->
+  <script type="importmap">
+  { "imports": { "three": "./assets/vendor/three.module.js" } }
+  </script>
+  <script type="module" src="scripts/hero3d.js"></script>
 </body>
 </html>
