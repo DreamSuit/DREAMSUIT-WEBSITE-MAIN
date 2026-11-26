@@ -6,6 +6,20 @@ Dates are absolute (YYYY-MM-DD).
 
 ## [Unreleased]
 
+### 2026-11-25 — Step 14: Realistic X-ray arm for the 3D hero
+- Rebuilt the hero sleeve as a **realistic, anatomical X-ray / engineering-schematic arm**
+  in the style of the DreamSleeve schematic: a variable-radius swept tube along a natural
+  arm curve (CatmullRom) — **shoulder → biceps → elbow → forearm → wrist → hand with fingers**,
+  plus a subtle body/torso hint — rendered with a **Fresnel-rim "ghost" shader** (additive,
+  double-sided) so the edges glow and the interior stays translucent, like a medical X-ray.
+- The **fabric sleeve** is a brighter Fresnel band over the biceps and forearm; the four
+  **circuit arrays (11-14)** sit on the sleeve surface via the curve's Frenet frames (front/back
+  placement, amber Circuit 12), with TENS signal pulses flowing along the limb and electrode
+  rings pulsing. Gentle 3/4 sway + mouse parallax.
+- Still self-contained (vendored Three.js, no build), `prefers-reduced-motion` static frame,
+  pauses off-screen, responsive reframing. Verified in headless Chrome (SwiftShader): shaders
+  compile clean, 0 exceptions, no horizontal overflow at 360/390px.
+
 ### 2026-11-25 — Step 13: Re-broadened to the dual audience (pediatric + adult self-injection)
 - Added the adult audience back alongside pediatric, per client's therapeutic-objective copy.
   DreamSleeve now mitigates **needle distress, acute procedural anxiety, and somatic muscle
