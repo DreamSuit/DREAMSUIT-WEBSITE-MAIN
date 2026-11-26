@@ -20,8 +20,9 @@ sitemap.xml robots.txt CNAME .nojekyll
 PLAN.md CHANGELOG.md
 ```
 
-**3D hero:** `scripts/hero3d.js` renders the DreamSleeve neuro-signal scene (bent-arm
-sleeve + circuits 11–14 + TENS pulses + electrode rings) with Three.js. It's an ES module
+**3D hero:** `scripts/hero3d.js` renders the DreamSleeve neuro-signal scene — a translucent
+X-ray/schematic arm (shoulder → forearm → hand) wearing the sleeve, with circuits 11–14,
+TENS signal pulses, and electrode rings, in a Fresnel-rim "ghost" style — with Three.js. It's an ES module
 resolved through the `<script type="importmap">` in `index.html` that points `"three"` at the
 locally-vendored `assets/vendor/three.module.js` — so the site stays self-contained with no
 build step and no CDN runtime dependency. The scene respects `prefers-reduced-motion`, pauses
