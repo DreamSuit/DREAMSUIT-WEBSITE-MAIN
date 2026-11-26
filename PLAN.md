@@ -7,11 +7,13 @@
 
 ## 1. Brief & decisions
 
-**Product.** DreamSuit — a dual-haptic wearable (TENS current + Piezo voltage) that
-gates pediatric procedural pain and renders texture illusions in synchrony, turning a
-needle stick into a gamified "mission." The moat: competitors are single-modality
-(buzzers, VR distractors, passive TENS); **nobody achieves synchronized dual-haptic
-embodiment.**
+**Product.** DreamSuit — an arm-worn dual-haptic sleeve (TENS current + Piezo voltage)
+that gates needle distress, acute procedural anxiety, and somatic muscle guarding, and
+renders texture illusions in synchrony, turning a needle stick into a gamified "mission."
+**Positioning resteered 2026-11-25 from pediatric-only to the full lifespan:** pediatric
+immunizations **and** adult self-injection — GLP-1 regimens and Type 1 Diabetes insulin.
+The moat: competitors are single-modality (buzzers, VR distractors, passive TENS);
+**nobody achieves synchronized dual-haptic embodiment.**
 
 **Confirmed decisions (2026-11-25):**
 | Decision | Choice |

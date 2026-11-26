@@ -6,6 +6,30 @@ Dates are absolute (YYYY-MM-DD).
 
 ## [Unreleased]
 
+### 2026-11-25 — Step 8: Positioning resteer — needle distress across the lifespan
+- **Broadened the thesis from pediatric-only to the full needle economy.** Product is now
+  framed as an arm-worn dual-action sleeve for needle distress, acute procedural anxiety,
+  and somatic muscle guarding across **both** pediatric immunizations **and** adult
+  self-injection — explicitly **GLP-1 regimens** and **Type 1 Diabetes insulin**.
+- **Meta/SEO/JSON-LD:** retitled to "…for Needle Distress"; rewrote description, keywords
+  (+GLP-1, insulin, self-injection, T1D), OG/Twitter copy, Org/Product descriptions, and
+  `MedicalAudience` → "Clinicians, caregivers, and self-injecting patients, peds + adult."
+- **Hero:** kicker → "Dual-haptic platform for needle distress — every age, every injection";
+  lede spans a child's first vaccine → adult weekly GLP-1 pen → lifelong insulin.
+- **Science:** pillar 01 now names Aβ-fiber gating **and** deltoid muscle-guarding relief
+  (from spec); pillar 02 adopts the spec's "crackling, staccato texture" vernacular.
+- **Device:** "child's skin / hard pediatric ceiling" → "clinicians and self-injecting
+  patients / profile-matched ceiling"; limiter readout → `PED 40 mA / ADULT 60 mA`.
+- **Mission:** age-inclusive rewrite (eyebrow "as the patient runs it"; Phase 01 hero-suit
+  for a kid / calibrated pre-warm for an adult; finale lands the adult-adherence payoff —
+  "one less reason to skip the dose … compounds across a lifetime of care").
+- **Market:** added the GLP-1 wave as the "why now" timing catalyst; moat → "one platform,
+  a lifetime of injections"; stats retooled (injections/yr all ages, adults avoiding care
+  over needle fear, peds + self-injection TAM) — all still `[placeholder]`-tagged.
+- **Traction:** pilot line broadened to peds-immunization **and** adult-self-injection sites.
+- Brand name **DreamSuit** and domain kept as-is (spec's internal "DreamSleeve" treated as
+  the form-factor description, not a rename — flag for client if a rebrand is intended).
+
 ### 2026-11-25 — Step 1: Project scaffold & plan
 - Established project in `DREAMSUIT - BRAND DESIGN AND UI/`.
 - Confirmed direction with client: **investor-led**, CTA **"Request the investor deck"**,
